@@ -19,7 +19,7 @@
                 "height": 100
               },
               "position": {
-                "x": 53,
+                "x": 54,
                 "y": 177
               },
               "angle": 0,
@@ -36,16 +36,16 @@
                   "type": "Denial of service",
                   "title": "Überlast durch Anfragen",
                   "threatId": "7f1274cc-47f0-42d2-b902-5168461a55ab",
-                  "description": "Angreifer erzeugt Last durch Anfragen",
-                  "mitigation": "DOS-Protection Service vorschalten"
+                  "description": "Angreifer erzeugt Last durch Anfragen\n\nWahrscheinlichkeit: hoch (da relativ einfach umzusetzen)\nSchweregrad: hoch (single point of failure)",
+                  "mitigation": "DOS-Protection Service vorschalten (ist etabliertes Verfahren)\nRedundanz aufbauen"
                 },
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "modelType": "STRIDE",
                   "type": "Repudiation",
                   "title": "Ausgeben als Login System",
-                  "description": "Angreifer gibt sich für DOS als Login System aus",
+                  "description": "Angreifer gibt sich für DOS als Login System aus, indem er z.B. die IP-Adresse des Allsecure Webservers als Absender angibt\n\nWahrscheinlichkeit: mittel (schränkt Angriffsmöglichkeiten ein, da Angreifer keine Antworten erhält)\nSchweregrad: gering",
                   "threatId": "a35d198f-20b8-47ca-84ca-64672a3e91b4"
                 }
               ],
@@ -83,8 +83,8 @@
                   "title": "Anfragen neuer OTT",
                   "type": "Denial of service",
                   "threatId": "6d18328a-cbea-44c7-80c1-f1d281423474",
-                  "description": "Angreifer fordert viele neue OTT an",
-                  "mitigation": "Begrenzung der Frequenz an OTT pro Account (allerdings dadurch DOS-Risiko erhöht)"
+                  "description": "Angreifer fordert viele neue OTT an\n\nWahrscheinlichkeit: hoch (da relativ einfach)\nSchweregrad: hoch (single point of failure)",
+                  "mitigation": "Begrenzung der Frequenz an OTT pro Account"
                 }
               ],
               "attrs": {
@@ -106,8 +106,8 @@
                 "height": 100
               },
               "position": {
-                "x": 335,
-                "y": 356
+                "x": 332,
+                "y": 384
               },
               "angle": 0,
               "id": "85e76455-7ad4-4359-b182-32003419a208",
@@ -201,12 +201,12 @@
                   "y": 1
                 },
                 {
-                  "x": 354,
-                  "y": 1
+                  "x": 90,
+                  "y": 12
                 },
                 {
-                  "x": 306,
-                  "y": 71
+                  "x": 76,
+                  "y": 85
                 },
                 {
                   "x": 302,
@@ -260,16 +260,8 @@
                   "modelType": "STRIDE",
                   "type": "Spoofing",
                   "title": "Auslesen des Zwischenspeichers",
-                  "description": "Personen mit Zugang zum zwischenspeicher können sich als Nutzer ausgeben",
+                  "description": "Personen mit Zugang zum zwischenspeicher können OTT auslesen und sich als Nutzer ausgeben",
                   "threatId": "2646653f-a02a-422b-b95e-7f0d833ad415"
-                },
-                {
-                  "status": "Open",
-                  "severity": "Medium",
-                  "modelType": "STRIDE",
-                  "title": "Auslesen des Zwischenspeichers",
-                  "type": "Information disclosure",
-                  "threatId": "c6f2e10a-fdbf-4a44-b39b-29ba6ed85552"
                 }
               ],
               "attrs": {
@@ -532,7 +524,7 @@
                   "modelType": "STRIDE",
                   "title": "Log Modification",
                   "type": "Tampering",
-                  "description": "Logs erst bei Export signiert",
+                  "description": "Da Logs erst beim Export signiert werden kann ein Angreifer mit Kontrolle über das Export-System die Daten verändern.",
                   "threatId": "3eccf3af-805b-4991-a048-21aacd2a4ba9"
                 }
               ],
@@ -763,7 +755,7 @@
                   "modelType": "STRIDE",
                   "type": "Information disclosure",
                   "title": "Phishing",
-                  "description": "z.B. über gefälschte Report-Mail mit Schadsoftware im Anhang",
+                  "description": "z.B. über gefälschte Report-Mail mit Schadsoftware im Anhang\n\nWahrscheinlichkeit: hoch (E-Mail Adressen ggf. öffentlich bekannt, Management rechnet regelmäßig mit Anhängen)\nSchweregrad: hoch",
                   "threatId": "bea5ccfa-8f55-4268-b4ae-5ed2fd89b5a3",
                   "mitigation": "interne Emails signieren\nSchulungen"
                 }
@@ -909,9 +901,11 @@
                   "status": "Open",
                   "severity": "Medium",
                   "modelType": "STRIDE",
-                  "title": "Email at rest nicht verschlüsselt",
+                  "title": "Emails at rest nicht verschlüsselt",
                   "type": "Information disclosure",
-                  "threatId": "492b8184-c632-48d7-a534-bba1b94f6ce4"
+                  "threatId": "492b8184-c632-48d7-a534-bba1b94f6ce4",
+                  "description": "Wahrscheinlichkeit: abhängig von Vertrauenswürdigkeit des Betreibers\nSchweregrad: mittel (Reports enthalten sensible und personenbezogene Informationen, aber keine, die die Authentifizierung selbst gefärden)",
+                  "mitigation": "Für den Versand sensitiver Informationen Ende-zu-Ende Verschlüsselung einsetzen."
                 }
               ],
               "attrs": {
@@ -980,8 +974,8 @@
               },
               "vertices": [
                 {
-                  "x": 369,
-                  "y": 322
+                  "x": 398,
+                  "y": 347
                 }
               ],
               "id": "aae803a3-6e67-45ab-84f8-af4936025958",
@@ -1019,8 +1013,8 @@
                 "height": 100
               },
               "position": {
-                "x": 334,
-                "y": 1
+                "x": 361,
+                "y": 7
               },
               "angle": 0,
               "id": "dbdf43b0-cf78-4b4a-a7a1-dc1f9aafb7b1",
@@ -1032,7 +1026,7 @@
                   "severity": "Medium",
                   "modelType": "STRIDE",
                   "title": "SIEM mit Zugang zu anderen Services",
-                  "description": "SIEM System hat für Monitoring Zwecke ggf. weitreichenden Zugriff auf Systeme",
+                  "description": "SIEM System hat für Monitoring ggf. weitreichenden Zugriff auf Systeme",
                   "type": "Elevation of privilege",
                   "threatId": "6f393c63-0af2-4d86-99db-6940cd3232b2"
                 }
@@ -1142,8 +1136,8 @@
                 "height": 80
               },
               "position": {
-                "x": 21,
-                "y": 1
+                "x": 112,
+                "y": 17
               },
               "angle": 0,
               "id": "170cefb9-a18a-4ba5-963d-62ca83c9eb49",
@@ -1192,7 +1186,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "loggin",
+                      "text": "logging",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -1231,8 +1225,8 @@
                   "modelType": "STRIDE",
                   "type": "Spoofing",
                   "title": "Authentifizierung gegenüber 2FA Service",
-                  "description": "Angreifer mit Kenntnis über den statischen Schlüssel können sich gegenüber dem 2FA Service als Telefonnummern API ausgeben und eine falsche Nummer zurückgeben um das OTT abzufangen.",
-                  "mitigation": "Authentifizierung über PKI (auf 2FA Service befindet sich nur noch öffentliches Zertifikat der Telefonnummern API)",
+                  "description": "Angreifer mit Kenntnis über den statischen Schlüssel können sich gegenüber dem 2FA Service als Telefonnummern API ausgeben und eine falsche Nummer zurückgeben um das OTT abzufangen.\n\nWahrscheinlichkeit: mittel (setzt Kenntnis über Schlüssel voraus, ggf. durch Mitarbeiter von Allescure oder Telefonnummern API Betreiber)\nSchweregrad: hoch (macht gesamtes Verfahren unwirksam)",
+                  "mitigation": "Authentifizierung über PKI (auf 2FA Service befindet sich nur noch öffentliches Zertifikat der Telefonnummern API, dadurch Spoofing nur durch zwei Parteien möglich)",
                   "threatId": "8ac878b9-3b10-44f8-9759-d320797a275d"
                 }
               ],
@@ -1269,8 +1263,9 @@
                   "modelType": "STRIDE",
                   "type": "Information disclosure",
                   "title": "Unverschlüsselte Kommunikation",
-                  "description": "Angreifer mit Zugang in VPN kann Routing Informationen mitlesen",
-                  "threatId": "cfd78dc3-ccaa-4991-8cc5-7f3ad53d9219"
+                  "description": "Angreifer mit Zugang zu VPN kann Routing Informationen mitlesen\n\nWahrscheinlichkeit: mittel (setzt motivierten Mitarbeiter voraus)\nSchweregrad: mittel",
+                  "threatId": "cfd78dc3-ccaa-4991-8cc5-7f3ad53d9219",
+                  "mitigation": "Verschlüsselung des internen Verkehrs"
                 }
               ],
               "attrs": {
@@ -1302,12 +1297,13 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "modelType": "STRIDE",
                   "type": "Spoofing",
                   "title": "Fälschung der Telefonnummer des Nutzers",
-                  "description": "Ein Angreifer mit Zugang zur Datenbank kann eine falsche Nummer hinterlegen um das OTT abzufangen",
-                  "threatId": "ab98d3a8-a262-4195-b705-cf11395569e5"
+                  "description": "Ein Angreifer mit Zugang zur Datenbank kann eine falsche Nummer hinterlegen um das OTT abzufangen\n\nWahrscheinlichkeit: mittel (setzt motivierten Mitarbeiter voraus, Zugang zu Datenbank hoffentlich begrenzt)\nSchweregrad: hoch (macht gesamtes Verfahren unwirksam)",
+                  "threatId": "ab98d3a8-a262-4195-b705-cf11395569e5",
+                  "mitigation": "Zugang zu Datenbank einschränken"
                 }
               ],
               "attrs": {
