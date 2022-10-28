@@ -47,8 +47,8 @@
                 "height": 100
               },
               "position": {
-                "x": 317,
-                "y": 165
+                "x": 428,
+                "y": 154
               },
               "angle": 0,
               "id": "9a126a7d-13ae-444b-a0ff-6c3c9f2e0094",
@@ -73,8 +73,8 @@
                 "height": 100
               },
               "position": {
-                "x": 347,
-                "y": 341
+                "x": 417,
+                "y": 432
               },
               "angle": 0,
               "id": "85e76455-7ad4-4359-b182-32003419a208",
@@ -89,6 +89,101 @@
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "4923d13e-9388-4ed6-837b-9aa0b4f809c1"
+              },
+              "target": {
+                "id": "9a126a7d-13ae-444b-a0ff-6c3c9f2e0094"
+              },
+              "vertices": [],
+              "id": "6832057b-9a23-4184-bf2c-bd7433548e77",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "user interaktion",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 4,
+              "hasOpenThreats": false,
+              "description": "anfordern/eingeben des OTT",
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "9a126a7d-13ae-444b-a0ff-6c3c9f2e0094"
+              },
+              "target": {
+                "id": "85e76455-7ad4-4359-b182-32003419a208"
+              },
+              "vertices": [
+                {
+                  "x": 375,
+                  "y": 265
+                },
+                {
+                  "x": 406,
+                  "y": 314
+                },
+                {
+                  "x": 369,
+                  "y": 308
+                }
+              ],
+              "id": "d591dde1-45a1-42f6-950f-727ddf2e7554",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.498529448397399,
+                    "offset": 3.3664907532125357
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "ott senden",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 5,
+              "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
                 }
               }
             }
