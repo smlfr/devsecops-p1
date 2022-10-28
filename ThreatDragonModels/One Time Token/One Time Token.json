@@ -1144,17 +1144,27 @@
               "angle": 0,
               "id": "170cefb9-a18a-4ba5-963d-62ca83c9eb49",
               "z": 40,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Tampering",
+                  "title": "Modifizierung der Logs",
+                  "threatId": "145d9854-572a-4869-b864-91fdb10184eb"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "SIEM Logs"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
