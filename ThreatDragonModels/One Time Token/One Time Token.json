@@ -54,17 +54,26 @@
               "angle": 0,
               "id": "9a126a7d-13ae-444b-a0ff-6c3c9f2e0094",
               "z": 2,
-              "hasOpenThreats": false,
-              "threats": [],
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Anfragen neuer OTT",
+                  "type": "Denial of service",
+                  "threatId": "6d18328a-cbea-44c7-80c1-f1d281423474"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "2 Faktor Authe\nntifizierungsdie\nnst"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -75,22 +84,32 @@
                 "height": 100
               },
               "position": {
-                "x": 372,
-                "y": 457
+                "x": 332,
+                "y": 488
               },
               "angle": 0,
               "id": "85e76455-7ad4-4359-b182-32003419a208",
               "z": 3,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Authentifizierung gegenüber Mobile Phone OTT service",
+                  "type": "Spoofing",
+                  "threatId": "015768a9-53e8-4605-9df8-c8cd43dbb78d"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Mobile Phone\nOTT Service"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -445,16 +464,27 @@
               "angle": 0,
               "id": "29e92042-e266-4a6f-819c-76d7e22f8ba1",
               "z": 22,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Log Modification",
+                  "type": "Tampering",
+                  "description": "Logs erst bei Export signiert",
+                  "threatId": "3eccf3af-805b-4991-a048-21aacd2a4ba9"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Log Export"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -790,16 +820,26 @@
               "angle": 0,
               "id": "e2d56e22-d8e6-4cbe-95b5-d47587b6af5f",
               "z": 33,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Email at rest nicht verschlüsselt",
+                  "type": "Information disclosure",
+                  "threatId": "492b8184-c632-48d7-a534-bba1b94f6ce4"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Mail Server"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -883,14 +923,17 @@
               },
               "vertices": [
                 {
-                  "x": 521,
-                  "y": 399
+                  "x": 328,
+                  "y": 380
                 }
               ],
               "id": "aae803a3-6e67-45ab-84f8-af4936025958",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.5612067805874704,
+                    "offset": -7.412100423660692
+                  },
                   "attrs": {
                     "text": {
                       "text": "OTT senden",
@@ -925,17 +968,27 @@
               "angle": 0,
               "id": "dbdf43b0-cf78-4b4a-a7a1-dc1f9aafb7b1",
               "z": 37,
-              "hasOpenThreats": false,
-              "threats": [],
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "SIEM mit Zugang zu anderen Services",
+                  "description": "SIEM System hat für Monitoring Zwecke ggf. weitreichenden Zugriff auf Systeme",
+                  "type": "Elevation of privilege",
+                  "threatId": "6f393c63-0af2-4d86-99db-6940cd3232b2"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "SIEM"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1093,29 +1146,29 @@
               },
               "smooth": true,
               "source": {
-                "x": 449,
-                "y": 429
+                "x": 426,
+                "y": 477
               },
               "target": {
-                "x": 457,
-                "y": 432
+                "x": 422,
+                "y": 473
               },
               "vertices": [
                 {
-                  "x": 496,
-                  "y": 492
+                  "x": 421,
+                  "y": 480
                 },
                 {
-                  "x": 425,
-                  "y": 619
+                  "x": 448,
+                  "y": 580
                 },
                 {
-                  "x": 337,
-                  "y": 493
+                  "x": 332,
+                  "y": 603
                 },
                 {
-                  "x": 393,
-                  "y": 412
+                  "x": 322,
+                  "y": 510
                 }
               ],
               "id": "72fa902a-9be0-4e32-9370-fb9ea3880d3b",
