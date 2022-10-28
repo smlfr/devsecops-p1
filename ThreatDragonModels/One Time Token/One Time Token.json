@@ -19,8 +19,8 @@
                 "height": 100
               },
               "position": {
-                "x": 253,
-                "y": 257
+                "x": 53,
+                "y": 177
               },
               "angle": 0,
               "id": "4923d13e-9388-4ed6-837b-9aa0b4f809c1",
@@ -47,8 +47,8 @@
                 "height": 100
               },
               "position": {
-                "x": 428,
-                "y": 154
+                "x": 398,
+                "y": 237
               },
               "angle": 0,
               "id": "9a126a7d-13ae-444b-a0ff-6c3c9f2e0094",
@@ -73,8 +73,8 @@
                 "height": 100
               },
               "position": {
-                "x": 417,
-                "y": 426
+                "x": 235,
+                "y": 670
               },
               "angle": 0,
               "id": "85e76455-7ad4-4359-b182-32003419a208",
@@ -112,7 +112,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "Nutzer Interaktion",
+                      "text": "OTT\nanfordern/senden",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -121,7 +121,7 @@
               ],
               "z": 4,
               "hasOpenThreats": false,
-              "description": "anfordern/eingeben des OTT",
+              "description": "",
               "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
@@ -179,21 +179,21 @@
               },
               "smooth": true,
               "source": {
-                "x": 398,
-                "y": 98
+                "x": 274,
+                "y": 184
               },
               "target": {
-                "x": 1135,
-                "y": 272
+                "x": 1181,
+                "y": 480
               },
               "vertices": [
                 {
-                  "x": 381,
-                  "y": 192
+                  "x": 403,
+                  "y": 366
                 },
                 {
-                  "x": 576,
-                  "y": 301
+                  "x": 539,
+                  "y": 401
                 }
               ],
               "id": "b8f82011-1651-41c8-9b6d-5905e84e7a92",
@@ -207,8 +207,8 @@
                 "height": 80
               },
               "position": {
-                "x": 686,
-                "y": 481
+                "x": 396,
+                "y": 593
               },
               "angle": 0,
               "id": "0f583ca0-7b02-492f-9cf0-42fc4d330e37",
@@ -235,8 +235,8 @@
                 "height": 80
               },
               "position": {
-                "x": 429,
-                "y": 1
+                "x": 405,
+                "y": 76
               },
               "angle": 0,
               "id": "b4a02a61-7aca-44e9-bf52-f8009292f542",
@@ -382,7 +382,8 @@
                 "id": "0f583ca0-7b02-492f-9cf0-42fc4d330e37"
               },
               "target": {
-                "id": "85e76455-7ad4-4359-b182-32003419a208"
+                "x": 485,
+                "y": 791
               },
               "vertices": [],
               "id": "d1cb119d-f1df-4661-a3ec-eac14978165c",
@@ -417,8 +418,8 @@
                 "height": 80
               },
               "position": {
-                "x": 927,
-                "y": 166
+                "x": 1017,
+                "y": 319
               },
               "angle": 0,
               "id": "7d8e0a17-acb9-439a-ad42-20d3b5472b3b",
@@ -445,8 +446,8 @@
                 "height": 80
               },
               "position": {
-                "x": 12,
-                "y": 145
+                "x": 18,
+                "y": 534
               },
               "angle": 0,
               "id": "63469365-3d3b-4c80-bba2-51dba0f9cd27",
@@ -518,8 +519,8 @@
               },
               "vertices": [
                 {
-                  "x": 180,
-                  "y": 343
+                  "x": 154,
+                  "y": 688
                 }
               ],
               "id": "3a7c0760-6e5d-480d-b356-bd588d519d48",
@@ -557,8 +558,8 @@
                 "height": 100
               },
               "position": {
-                "x": 952,
-                "y": 3
+                "x": 1025,
+                "y": 180
               },
               "angle": 0,
               "id": "29e92042-e266-4a6f-819c-76d7e22f8ba1",
@@ -583,8 +584,8 @@
                 "height": 80
               },
               "position": {
-                "x": 673,
-                "y": 6
+                "x": 693,
+                "y": 248
               },
               "angle": 0,
               "id": "c24e31e9-9052-4254-8fc2-59f2f8f40069",
@@ -618,8 +619,8 @@
               },
               "vertices": [
                 {
-                  "x": 673,
-                  "y": 162
+                  "x": 595,
+                  "y": 335
                 }
               ],
               "id": "ae52f578-bdcf-4518-82e4-588454c13150",
@@ -654,8 +655,7 @@
               },
               "smooth": true,
               "source": {
-                "x": 837,
-                "y": 49
+                "id": "c24e31e9-9052-4254-8fc2-59f2f8f40069"
               },
               "target": {
                 "id": "29e92042-e266-4a6f-819c-76d7e22f8ba1"
@@ -731,25 +731,29 @@
               },
               "smooth": true,
               "source": {
-                "x": 7,
-                "y": 73
+                "x": 3,
+                "y": 288
               },
               "target": {
-                "x": 862,
-                "y": 579
+                "x": 622,
+                "y": 852
               },
               "vertices": [
                 {
-                  "x": 327,
-                  "y": 191
+                  "x": 133,
+                  "y": 344
                 },
                 {
-                  "x": 429,
-                  "y": 368
+                  "x": 267,
+                  "y": 380
                 },
                 {
-                  "x": 777,
-                  "y": 410
+                  "x": 405,
+                  "y": 541
+                },
+                {
+                  "x": 652,
+                  "y": 551
                 }
               ],
               "id": "1796e9b1-201e-44f8-980c-97d764761bcd",
@@ -763,8 +767,8 @@
                 "height": 80
               },
               "position": {
-                "x": 990,
-                "y": 418
+                "x": 799,
+                "y": 703
               },
               "angle": 0,
               "id": "1fff9e63-14c6-464e-a60e-73f78a8e0841",
@@ -795,7 +799,12 @@
               "target": {
                 "id": "1fff9e63-14c6-464e-a60e-73f78a8e0841"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 1050,
+                  "y": 488
+                }
+              ],
               "id": "64b8dc97-5d7a-4083-8f4c-9f623472c1ee",
               "labels": [
                 {
@@ -829,27 +838,98 @@
               },
               "smooth": true,
               "source": {
-                "x": 1134,
-                "y": 347
+                "x": 999,
+                "y": 734
               },
               "target": {
-                "x": 965,
-                "y": 540
+                "x": 747,
+                "y": 862
               },
               "vertices": [
                 {
-                  "x": 937,
-                  "y": 401
+                  "x": 955,
+                  "y": 680
+                },
+                {
+                  "x": 819,
+                  "y": 656
                 }
               ],
               "id": "3fdce6a4-8323-42eb-94c8-fba86beb9055",
               "z": 30,
               "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 197,
+                "y": 127
+              },
+              "target": {
+                "x": 16,
+                "y": 266
+              },
+              "vertices": [
+                {
+                  "x": 181,
+                  "y": 271
+                },
+                {
+                  "x": 73,
+                  "y": 301
+                }
+              ],
+              "id": "062ce4c8-b5d5-4ed9-873b-6904ff5d2199",
+              "z": 31,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "0f583ca0-7b02-492f-9cf0-42fc4d330e37"
+              },
+              "target": {
+                "id": "85e76455-7ad4-4359-b182-32003419a208"
+              },
+              "vertices": [],
+              "id": "1e7056ea-55b6-46cc-a5b9-3525b640e185",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "schreiben/lesen",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 32,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
         "size": {
-          "height": 591,
+          "height": 902,
           "width": 3165
         }
       }
