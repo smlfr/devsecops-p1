@@ -19,15 +19,76 @@
                 "height": 100
               },
               "position": {
-                "x": 50,
-                "y": 50
+                "x": 87,
+                "y": 147
               },
               "angle": 0,
               "id": "4923d13e-9388-4ed6-837b-9aa0b4f809c1",
               "z": 1,
+              "hasOpenThreats": false,
+              "description": "webapp / mobile app",
+              "isWebApplication": true,
               "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
                 "text": {
-                  "text": "process 0"
+                  "text": "login system"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 317,
+                "y": 165
+              },
+              "angle": 0,
+              "id": "9a126a7d-13ae-444b-a0ff-6c3c9f2e0094",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "2 Faktor Authe\nntifizierungsdie\nnst"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 347,
+                "y": 341
+              },
+              "angle": 0,
+              "id": "85e76455-7ad4-4359-b182-32003419a208",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Mobile Phone\nOTT Service"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             }
