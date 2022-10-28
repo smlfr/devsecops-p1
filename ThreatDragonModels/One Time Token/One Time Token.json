@@ -25,19 +25,37 @@
               "angle": 0,
               "id": "4923d13e-9388-4ed6-837b-9aa0b4f809c1",
               "z": 1,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "description": "webapp / mobile app",
               "isWebApplication": true,
-              "threats": [],
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Denial of service",
+                  "title": "Überlast durch Anfragen",
+                  "threatId": "7f1274cc-47f0-42d2-b902-5168461a55ab"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Repudiation",
+                  "title": "Ausgeben als Login System",
+                  "description": "Angreifer gibt sich für DOS als Login System aus",
+                  "threatId": "a35d198f-20b8-47ca-84ca-64672a3e91b4"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "login system"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -48,8 +66,8 @@
                 "height": 100
               },
               "position": {
-                "x": 394,
-                "y": 224
+                "x": 386,
+                "y": 210
               },
               "angle": 0,
               "id": "9a126a7d-13ae-444b-a0ff-6c3c9f2e0094",
@@ -213,24 +231,43 @@
                 "height": 80
               },
               "position": {
-                "x": 560,
-                "y": 67
+                "x": 519,
+                "y": 84
               },
               "angle": 0,
               "id": "b4a02a61-7aca-44e9-bf52-f8009292f542",
               "z": 10,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "storesCredentials": true,
               "description": "OTT muss zum Anzeigen temporär vorliegen",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Spoofing",
+                  "title": "Auslesen des Zwischenspeichers",
+                  "description": "Personen mit Zugang zum zwischenspeicher können sich als Nutzer ausgeben",
+                  "threatId": "2646653f-a02a-422b-b95e-7f0d833ad415"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Auslesen des Zwischenspeichers",
+                  "type": "Information disclosure",
+                  "threatId": "c6f2e10a-fdbf-4a44-b39b-29ba6ed85552"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "OTT temp"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -324,18 +361,28 @@
               "angle": 0,
               "id": "7d8e0a17-acb9-439a-ad42-20d3b5472b3b",
               "z": 15,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": true,
               "isSigned": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "title": "Nutzerdaten für Management einsehbar",
+                  "threatId": "224cae93-7743-4be3-a4b8-f24b1250656b"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Management Report"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -501,17 +548,28 @@
               "angle": 0,
               "id": "c24e31e9-9052-4254-8fc2-59f2f8f40069",
               "z": 23,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Log Manipulation",
+                  "type": "Tampering",
+                  "description": "Logs sind nicht signiert",
+                  "threatId": "3d61b992-9d36-49c7-b348-d61cef1db602"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "2FA-Service Logs"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
