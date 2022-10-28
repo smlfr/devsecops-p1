@@ -1,6 +1,8 @@
 {
   "summary": {
-    "title": "One Time Token"
+    "title": "One Time Token",
+    "owner": "Samuel Fritzsche, Ahmed Wafi",
+    "description": "Allsecure One Time Token System"
   },
   "detail": {
     "contributors": [],
