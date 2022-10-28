@@ -203,8 +203,8 @@
                 "height": 80
               },
               "position": {
-                "x": 681,
-                "y": 446
+                "x": 686,
+                "y": 481
               },
               "angle": 0,
               "id": "0f583ca0-7b02-492f-9cf0-42fc4d330e37",
@@ -413,19 +413,21 @@
                 "height": 80
               },
               "position": {
-                "x": 993,
-                "y": 165
+                "x": 975,
+                "y": 270
               },
               "angle": 0,
               "id": "7d8e0a17-acb9-439a-ad42-20d3b5472b3b",
               "z": 15,
               "hasOpenThreats": false,
+              "isALog": true,
+              "isSigned": true,
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "store 13"
+                  "text": "Management Report"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -551,8 +553,8 @@
                 "height": 100
               },
               "position": {
-                "x": 857,
-                "y": 92
+                "x": 938,
+                "y": 101
               },
               "angle": 0,
               "id": "29e92042-e266-4a6f-819c-76d7e22f8ba1",
@@ -577,8 +579,8 @@
                 "height": 80
               },
               "position": {
-                "x": 662,
-                "y": 224
+                "x": 676,
+                "y": 112
               },
               "angle": 0,
               "id": "c24e31e9-9052-4254-8fc2-59f2f8f40069",
@@ -617,7 +619,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "Logs speichern",
+                      "text": "schreiben",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -634,6 +636,115 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "c24e31e9-9052-4254-8fc2-59f2f8f40069"
+              },
+              "target": {
+                "id": "29e92042-e266-4a6f-819c-76d7e22f8ba1"
+              },
+              "vertices": [],
+              "id": "1b9989ef-aac4-44ac-89f6-6bfd429ec304",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "lesen",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 25,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "29e92042-e266-4a6f-819c-76d7e22f8ba1"
+              },
+              "target": {
+                "id": "7d8e0a17-acb9-439a-ad42-20d3b5472b3b"
+              },
+              "vertices": [],
+              "id": "2aeaf4d3-8c7a-4eac-9e68-384cdfffb766",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "exportieren",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 26,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 7,
+                "y": 73
+              },
+              "target": {
+                "x": 942,
+                "y": 525
+              },
+              "vertices": [
+                {
+                  "x": 327,
+                  "y": 191
+                },
+                {
+                  "x": 429,
+                  "y": 368
+                },
+                {
+                  "x": 763,
+                  "y": 432
+                }
+              ],
+              "id": "1796e9b1-201e-44f8-980c-97d764761bcd",
+              "z": 27,
+              "attrs": {}
             }
           ]
         },
