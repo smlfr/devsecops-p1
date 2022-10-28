@@ -183,13 +183,17 @@
                 "y": 98
               },
               "target": {
-                "x": 532,
-                "y": 295
+                "x": 1135,
+                "y": 272
               },
               "vertices": [
                 {
-                  "x": 404,
-                  "y": 260
+                  "x": 381,
+                  "y": 192
+                },
+                {
+                  "x": 576,
+                  "y": 301
                 }
               ],
               "id": "b8f82011-1651-41c8-9b6d-5905e84e7a92",
@@ -413,8 +417,8 @@
                 "height": 80
               },
               "position": {
-                "x": 975,
-                "y": 270
+                "x": 927,
+                "y": 166
               },
               "angle": 0,
               "id": "7d8e0a17-acb9-439a-ad42-20d3b5472b3b",
@@ -553,8 +557,8 @@
                 "height": 100
               },
               "position": {
-                "x": 938,
-                "y": 101
+                "x": 952,
+                "y": 3
               },
               "angle": 0,
               "id": "29e92042-e266-4a6f-819c-76d7e22f8ba1",
@@ -579,8 +583,8 @@
                 "height": 80
               },
               "position": {
-                "x": 676,
-                "y": 112
+                "x": 673,
+                "y": 6
               },
               "angle": 0,
               "id": "c24e31e9-9052-4254-8fc2-59f2f8f40069",
@@ -612,7 +616,12 @@
               "target": {
                 "id": "c24e31e9-9052-4254-8fc2-59f2f8f40069"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 673,
+                  "y": 162
+                }
+              ],
               "id": "ae52f578-bdcf-4518-82e4-588454c13150",
               "labels": [
                 {
@@ -645,7 +654,8 @@
               },
               "smooth": true,
               "source": {
-                "id": "c24e31e9-9052-4254-8fc2-59f2f8f40069"
+                "x": 837,
+                "y": 49
               },
               "target": {
                 "id": "29e92042-e266-4a6f-819c-76d7e22f8ba1"
@@ -745,6 +755,71 @@
               "id": "1796e9b1-201e-44f8-980c-97d764761bcd",
               "z": 27,
               "attrs": {}
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 990,
+                "y": 418
+              },
+              "angle": 0,
+              "id": "1fff9e63-14c6-464e-a60e-73f78a8e0841",
+              "z": 28,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Management"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "7d8e0a17-acb9-439a-ad42-20d3b5472b3b"
+              },
+              "target": {
+                "id": "1fff9e63-14c6-464e-a60e-73f78a8e0841"
+              },
+              "vertices": [],
+              "id": "64b8dc97-5d7a-4083-8f4c-9f623472c1ee",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "E-Mail",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 29,
+              "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
