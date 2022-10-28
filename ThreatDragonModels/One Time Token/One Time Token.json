@@ -145,27 +145,11 @@
               "target": {
                 "id": "85e76455-7ad4-4359-b182-32003419a208"
               },
-              "vertices": [
-                {
-                  "x": 375,
-                  "y": 265
-                },
-                {
-                  "x": 406,
-                  "y": 314
-                },
-                {
-                  "x": 369,
-                  "y": 308
-                }
-              ],
-              "id": "d591dde1-45a1-42f6-950f-727ddf2e7554",
+              "vertices": [],
+              "id": "4f23f0a5-940d-4244-be14-b12ce7d81ff8",
               "labels": [
                 {
-                  "position": {
-                    "distance": 0.498529448397399,
-                    "offset": 3.3664907532125357
-                  },
+                  "position": 0.5,
                   "attrs": {
                     "text": {
                       "text": "ott senden",
