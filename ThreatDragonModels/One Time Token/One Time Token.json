@@ -145,7 +145,16 @@
               "target": {
                 "id": "85e76455-7ad4-4359-b182-32003419a208"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 389,
+                  "y": 451
+                },
+                {
+                  "x": 374,
+                  "y": 492
+                }
+              ],
               "id": "4f23f0a5-940d-4244-be14-b12ce7d81ff8",
               "labels": [
                 {
@@ -187,10 +196,6 @@
                 "y": 480
               },
               "vertices": [
-                {
-                  "x": 403,
-                  "y": 366
-                },
                 {
                   "x": 539,
                   "y": 401
@@ -418,8 +423,8 @@
                 "height": 80
               },
               "position": {
-                "x": 1017,
-                "y": 319
+                "x": 903,
+                "y": 222
               },
               "angle": 0,
               "id": "7d8e0a17-acb9-439a-ad42-20d3b5472b3b",
@@ -558,8 +563,8 @@
                 "height": 100
               },
               "position": {
-                "x": 1025,
-                "y": 180
+                "x": 897,
+                "y": 75
               },
               "angle": 0,
               "id": "29e92042-e266-4a6f-819c-76d7e22f8ba1",
@@ -584,8 +589,8 @@
                 "height": 80
               },
               "position": {
-                "x": 693,
-                "y": 248
+                "x": 597,
+                "y": 75
               },
               "angle": 0,
               "id": "c24e31e9-9052-4254-8fc2-59f2f8f40069",
@@ -619,8 +624,8 @@
               },
               "vertices": [
                 {
-                  "x": 595,
-                  "y": 335
+                  "x": 584,
+                  "y": 219
                 }
               ],
               "id": "ae52f578-bdcf-4518-82e4-588454c13150",
@@ -797,12 +802,12 @@
                 "id": "7d8e0a17-acb9-439a-ad42-20d3b5472b3b"
               },
               "target": {
-                "id": "1fff9e63-14c6-464e-a60e-73f78a8e0841"
+                "id": "e2d56e22-d8e6-4cbe-95b5-d47587b6af5f"
               },
               "vertices": [
                 {
-                  "x": 1050,
-                  "y": 488
+                  "x": 1039,
+                  "y": 431
                 }
               ],
               "id": "64b8dc97-5d7a-4083-8f4c-9f623472c1ee",
@@ -838,8 +843,8 @@
               },
               "smooth": true,
               "source": {
-                "x": 999,
-                "y": 734
+                "x": 1015,
+                "y": 836
               },
               "target": {
                 "x": 747,
@@ -925,12 +930,103 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 1027,
+                "y": 530
+              },
+              "angle": 0,
+              "id": "e2d56e22-d8e6-4cbe-95b5-d47587b6af5f",
+              "z": 33,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Mail Server"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "e2d56e22-d8e6-4cbe-95b5-d47587b6af5f"
+              },
+              "target": {
+                "id": "1fff9e63-14c6-464e-a60e-73f78a8e0841"
+              },
+              "vertices": [],
+              "id": "9bc9456f-d352-4591-9f8f-d3bee150410b",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "E-Mail",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 34,
+              "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 1178,
+                "y": 64
+              },
+              "angle": 0,
+              "id": "40ae40ba-41dd-46ae-8857-e8c9e73dd978",
+              "z": 35,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "SIEM"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
         "size": {
-          "height": 902,
-          "width": 3165
+          "height": 1299,
+          "width": 5231
         }
       }
     ]
