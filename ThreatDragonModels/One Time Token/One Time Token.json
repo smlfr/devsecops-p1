@@ -31,11 +31,13 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "modelType": "STRIDE",
                   "type": "Denial of service",
                   "title": "Überlast durch Anfragen",
-                  "threatId": "7f1274cc-47f0-42d2-b902-5168461a55ab"
+                  "threatId": "7f1274cc-47f0-42d2-b902-5168461a55ab",
+                  "description": "Angreifer erzeugt Last durch Anfragen",
+                  "mitigation": "DOS-Protection Service vorschalten"
                 },
                 {
                   "status": "Open",
@@ -80,7 +82,9 @@
                   "modelType": "STRIDE",
                   "title": "Anfragen neuer OTT",
                   "type": "Denial of service",
-                  "threatId": "6d18328a-cbea-44c7-80c1-f1d281423474"
+                  "threatId": "6d18328a-cbea-44c7-80c1-f1d281423474",
+                  "description": "Angreifer fordert viele neue OTT an",
+                  "mitigation": "Begrenzung der Frequenz an OTT pro Account (allerdings dadurch DOS-Risiko erhöht)"
                 }
               ],
               "attrs": {
@@ -102,8 +106,8 @@
                 "height": 100
               },
               "position": {
-                "x": 332,
-                "y": 488
+                "x": 335,
+                "y": 356
               },
               "angle": 0,
               "id": "85e76455-7ad4-4359-b182-32003419a208",
@@ -112,11 +116,12 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "modelType": "STRIDE",
                   "title": "Authentifizierung gegenüber Mobile Phone OTT service",
                   "type": "Spoofing",
-                  "threatId": "015768a9-53e8-4605-9df8-c8cd43dbb78d"
+                  "threatId": "015768a9-53e8-4605-9df8-c8cd43dbb78d",
+                  "description": "Ein anderes System gibt sich gegenüber dem Service als System des Nutzers aus"
                 }
               ],
               "attrs": {
@@ -192,24 +197,32 @@
                   "y": 43
                 },
                 {
-                  "x": 544,
-                  "y": 63
+                  "x": 471,
+                  "y": 1
                 },
                 {
-                  "x": 406,
-                  "y": 137
+                  "x": 354,
+                  "y": 1
+                },
+                {
+                  "x": 306,
+                  "y": 71
                 },
                 {
                   "x": 302,
                   "y": 244
                 },
                 {
-                  "x": 381,
-                  "y": 324
+                  "x": 285,
+                  "y": 423
                 },
                 {
-                  "x": 595,
-                  "y": 353
+                  "x": 421,
+                  "y": 555
+                },
+                {
+                  "x": 552,
+                  "y": 352
                 },
                 {
                   "x": 742,
@@ -506,7 +519,7 @@
               },
               "position": {
                 "x": 946,
-                "y": 73
+                "y": 79
               },
               "angle": 0,
               "id": "29e92042-e266-4a6f-819c-76d7e22f8ba1",
@@ -736,22 +749,34 @@
                 "height": 80
               },
               "position": {
-                "x": 855,
-                "y": 506
+                "x": 868,
+                "y": 510
               },
               "angle": 0,
               "id": "1fff9e63-14c6-464e-a60e-73f78a8e0841",
               "z": 28,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "title": "Phishing",
+                  "description": "z.B. über gefälschte Report-Mail mit Schadsoftware im Anhang",
+                  "threatId": "bea5ccfa-8f55-4268-b4ae-5ed2fd89b5a3",
+                  "mitigation": "interne Emails signieren\nSchulungen"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Management"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -872,8 +897,8 @@
                 "height": 100
               },
               "position": {
-                "x": 824,
-                "y": 354
+                "x": 785,
+                "y": 347
               },
               "angle": 0,
               "id": "e2d56e22-d8e6-4cbe-95b5-d47587b6af5f",
@@ -955,8 +980,8 @@
               },
               "vertices": [
                 {
-                  "x": 328,
-                  "y": 380
+                  "x": 369,
+                  "y": 322
                 }
               ],
               "id": "aae803a3-6e67-45ab-84f8-af4936025958",
@@ -994,7 +1019,7 @@
                 "height": 100
               },
               "position": {
-                "x": 305,
+                "x": 334,
                 "y": 1
               },
               "angle": 0,
@@ -1037,7 +1062,12 @@
               "target": {
                 "id": "dbdf43b0-cf78-4b4a-a7a1-dc1f9aafb7b1"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 442,
+                  "y": 141
+                }
+              ],
               "id": "3c095863-a020-4a4c-8c5c-c70c452b75fd",
               "labels": [
                 {
@@ -1077,8 +1107,8 @@
               },
               "vertices": [
                 {
-                  "x": 217,
-                  "y": 309
+                  "x": 319,
+                  "y": 288
                 }
               ],
               "id": "8d014151-dadc-4357-8d50-adc8e29abe10",
@@ -1181,6 +1211,311 @@
               }
             },
             {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 544,
+                "y": 424
+              },
+              "angle": 0,
+              "id": "62278942-c81f-4e50-99cb-d6582d2021be",
+              "z": 42,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Spoofing",
+                  "title": "Authentifizierung gegenüber 2FA Service",
+                  "description": "Angreifer mit Kenntnis über den statischen Schlüssel können sich gegenüber dem 2FA Service als Telefonnummern API ausgeben und eine falsche Nummer zurückgeben um das OTT abzufangen.",
+                  "mitigation": "Authentifizierung über PKI (auf 2FA Service befindet sich nur noch öffentliches Zertifikat der Telefonnummern API)",
+                  "threatId": "8ac878b9-3b10-44f8-9759-d320797a275d"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Telefonnumme\nrn API Gateway"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 551,
+                "y": 592
+              },
+              "angle": 0,
+              "id": "eb64639a-0569-4962-808f-e7ad5cb0c5b0",
+              "z": 43,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "title": "Unverschlüsselte Kommunikation",
+                  "description": "Angreifer mit Zugang in VPN kann Routing Informationen mitlesen",
+                  "threatId": "cfd78dc3-ccaa-4991-8cc5-7f3ad53d9219"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Telefon\nRouting\nInterface"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 515,
+                "y": 773
+              },
+              "angle": 0,
+              "id": "f294502e-516e-49b2-86c4-0a4582b0f8c6",
+              "z": 44,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Spoofing",
+                  "title": "Fälschung der Telefonnummer des Nutzers",
+                  "description": "Ein Angreifer mit Zugang zur Datenbank kann eine falsche Nummer hinterlegen um das OTT abzufangen",
+                  "threatId": "ab98d3a8-a262-4195-b705-cf11395569e5"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Telefonanbieter\nDatenbank"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "9a126a7d-13ae-444b-a0ff-6c3c9f2e0094"
+              },
+              "target": {
+                "id": "62278942-c81f-4e50-99cb-d6582d2021be"
+              },
+              "vertices": [],
+              "id": "6a5ae991-1019-4cda-9089-c01dbaeb7efc",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 33",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 45,
+              "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "62278942-c81f-4e50-99cb-d6582d2021be"
+              },
+              "target": {
+                "id": "eb64639a-0569-4962-808f-e7ad5cb0c5b0"
+              },
+              "vertices": [],
+              "id": "54581de1-743d-4337-8e7c-8b674522a0fd",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 34",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 46,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "eb64639a-0569-4962-808f-e7ad5cb0c5b0"
+              },
+              "target": {
+                "id": "f294502e-516e-49b2-86c4-0a4582b0f8c6"
+              },
+              "vertices": [],
+              "id": "ca1bc041-e133-4732-a120-07e6835cb965",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 35",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 47,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "f294502e-516e-49b2-86c4-0a4582b0f8c6"
+              },
+              "target": {
+                "id": "eb64639a-0569-4962-808f-e7ad5cb0c5b0"
+              },
+              "vertices": [],
+              "id": "05ee0e04-cd0e-4d60-ae29-0f2bc5612489",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 36",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 48,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "eb64639a-0569-4962-808f-e7ad5cb0c5b0"
+              },
+              "target": {
+                "id": "62278942-c81f-4e50-99cb-d6582d2021be"
+              },
+              "vertices": [],
+              "id": "75dd3dc0-f86d-440e-b749-87d7f41023ea",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 37",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 49,
+              "hasOpenThreats": false,
+              "outOfScope": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
               "type": "tm.Boundary",
               "size": {
                 "width": 10,
@@ -1188,39 +1523,35 @@
               },
               "smooth": true,
               "source": {
-                "x": 426,
-                "y": 477
+                "x": 486,
+                "y": 868
               },
               "target": {
-                "x": 422,
-                "y": 473
+                "x": 688,
+                "y": 867
               },
               "vertices": [
                 {
-                  "x": 421,
-                  "y": 480
+                  "x": 501,
+                  "y": 770
                 },
                 {
-                  "x": 448,
-                  "y": 580
+                  "x": 527,
+                  "y": 447
                 },
                 {
-                  "x": 332,
-                  "y": 603
-                },
-                {
-                  "x": 322,
-                  "y": 510
+                  "x": 683,
+                  "y": 429
                 }
               ],
-              "id": "72fa902a-9be0-4e32-9370-fb9ea3880d3b",
-              "z": 43,
+              "id": "21b5c7cf-e25d-4cc6-99ae-767f92ca22a7",
+              "z": 50,
               "attrs": {}
             }
           ]
         },
         "size": {
-          "height": 1299,
+          "height": 1496,
           "width": 5231
         }
       }
