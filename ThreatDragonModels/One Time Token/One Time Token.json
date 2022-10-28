@@ -46,7 +46,8 @@
                   "type": "Repudiation",
                   "title": "Ausgeben als Login System",
                   "description": "Angreifer gibt sich für DOS als Login System aus, indem er z.B. die IP-Adresse des Allsecure Webservers als Absender angibt\n\nWahrscheinlichkeit: mittel (schränkt Angriffsmöglichkeiten ein, da Angreifer keine Antworten erhält)\nSchweregrad: gering",
-                  "threatId": "a35d198f-20b8-47ca-84ca-64672a3e91b4"
+                  "threatId": "a35d198f-20b8-47ca-84ca-64672a3e91b4",
+                  "mitigation": ""
                 }
               ],
               "attrs": {
@@ -260,8 +261,9 @@
                   "modelType": "STRIDE",
                   "type": "Spoofing",
                   "title": "Auslesen des Zwischenspeichers",
-                  "description": "Personen mit Zugang zum zwischenspeicher können OTT auslesen und sich als Nutzer ausgeben",
-                  "threatId": "2646653f-a02a-422b-b95e-7f0d833ad415"
+                  "description": "Personen mit Zugang zum zwischenspeicher können OTT auslesen und sich als Nutzer ausgeben\n\nWahrscheinlichkeit: mittel\nSchweregrad: hoch (macht Verfahren unwirksam)",
+                  "threatId": "2646653f-a02a-422b-b95e-7f0d833ad415",
+                  "mitigation": "Zugang einschränken"
                 }
               ],
               "attrs": {
@@ -376,7 +378,9 @@
                   "modelType": "STRIDE",
                   "type": "Information disclosure",
                   "title": "Nutzerdaten für Management einsehbar",
-                  "threatId": "224cae93-7743-4be3-a4b8-f24b1250656b"
+                  "threatId": "224cae93-7743-4be3-a4b8-f24b1250656b",
+                  "description": "Wahrscheinlichkeit: hoch\nSchweregrad: mittel",
+                  "mitigation": "Reduzieren der Informationen in Report auf unerlässliche Daten\nPseudonymisierung/Anonymisierung"
                 }
               ],
               "attrs": {
@@ -520,12 +524,13 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "modelType": "STRIDE",
                   "title": "Log Modification",
                   "type": "Tampering",
-                  "description": "Da Logs erst beim Export signiert werden kann ein Angreifer mit Kontrolle über das Export-System die Daten verändern.",
-                  "threatId": "3eccf3af-805b-4991-a048-21aacd2a4ba9"
+                  "description": "Da Logs erst beim Export signiert werden kann ein Angreifer mit Kontrolle über das Export-System die Daten verändern.\n\nWahrscheinlichkeit: mittel\nSchweregrad: mittel (Logs dienen der Management information, nicht der Sicherheitsüberwachung)",
+                  "threatId": "3eccf3af-805b-4991-a048-21aacd2a4ba9",
+                  "mitigation": "Logdaten so früh wie möglich signieren\nZugangsrechte einschränken"
                 }
               ],
               "attrs": {
@@ -547,8 +552,8 @@
                 "height": 80
               },
               "position": {
-                "x": 670,
-                "y": 188
+                "x": 642,
+                "y": 202
               },
               "angle": 0,
               "id": "c24e31e9-9052-4254-8fc2-59f2f8f40069",
@@ -558,11 +563,11 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "modelType": "STRIDE",
                   "title": "Log Manipulation",
                   "type": "Tampering",
-                  "description": "Logs sind nicht signiert",
+                  "description": "Logs sind nicht signiert\n\nWahrscheinlichkeit: mittel\nSchweregrad: mittel",
                   "threatId": "3d61b992-9d36-49c7-b348-d61cef1db602"
                 }
               ],
@@ -890,7 +895,7 @@
               },
               "position": {
                 "x": 785,
-                "y": 347
+                "y": 348
               },
               "angle": 0,
               "id": "e2d56e22-d8e6-4cbe-95b5-d47587b6af5f",
@@ -1028,7 +1033,8 @@
                   "title": "SIEM mit Zugang zu anderen Services",
                   "description": "SIEM System hat für Monitoring ggf. weitreichenden Zugriff auf Systeme",
                   "type": "Elevation of privilege",
-                  "threatId": "6f393c63-0af2-4d86-99db-6940cd3232b2"
+                  "threatId": "6f393c63-0af2-4d86-99db-6940cd3232b2",
+                  "mitigation": "Einsetzen von Push-basierten Systemen"
                 }
               ],
               "attrs": {
@@ -1136,7 +1142,7 @@
                 "height": 80
               },
               "position": {
-                "x": 112,
+                "x": 108,
                 "y": 17
               },
               "angle": 0,
@@ -1151,7 +1157,9 @@
                   "modelType": "STRIDE",
                   "type": "Tampering",
                   "title": "Modifizierung der Logs",
-                  "threatId": "145d9854-572a-4869-b864-91fdb10184eb"
+                  "threatId": "145d9854-572a-4869-b864-91fdb10184eb",
+                  "description": "Wahrscheinlichkeit: mittel\nSchweregrad: hoch (veränderung Sicherheitsrelevanter Daten)",
+                  "mitigation": "Zugang zu SIEM System einschränken\nBackups\nProtokollierung von Änderungen/Zugriffen"
                 }
               ],
               "attrs": {
